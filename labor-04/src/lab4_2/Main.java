@@ -44,7 +44,7 @@ public class Main {
                     while (items[0].trim().equals("Account")) {
                         String accountNr = items[1].trim();
                         double balance = Double.parseDouble((items[2].trim()));
-                        currentCustomer.addAccounts(new BankAccount(accountNr,balance));
+                        //currentCustomer.addAccounts(new BankAccount(accountNr,));
                         if(scanner.hasNextLine()) {
                             line = scanner.nextLine();
                             items = line.split(",");
