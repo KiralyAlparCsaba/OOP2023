@@ -7,7 +7,7 @@ import java.util.Objects;
 public class StackAggregation {
 
     private ArrayList<Object> items  = new ArrayList<>();
-    private int capacity;
+    private final int capacity;
 
     public StackAggregation(int capacity) {
         this.capacity = capacity;

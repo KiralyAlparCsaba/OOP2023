@@ -36,7 +36,7 @@ public class Main {
         bac2.withdraw(2000);
         bac3.withdraw(2000);
         bac4.withdraw(2000);
-        bac5.withdraw(2000);
+        bac5.withdraw(2005);
         System.out.println("\n"+bank1.getCustomers());
     }
 
