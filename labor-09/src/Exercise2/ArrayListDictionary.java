@@ -6,8 +6,12 @@ public class ArrayListDictionary implements IDictionary {
     private ArrayList<String> words;
     private ArrayListDictionary instance;
 
-    public ArrayListDictionary() {
+    ArrayListDictionary() {
         this.words = new ArrayList<>();
+    }
+
+    public static IDictionary newInstance(){
+            return new ArrayListDictionary();
     }
 
 
@@ -16,8 +20,11 @@ public class ArrayListDictionary implements IDictionary {
     }
 
     public boolean add(String word) {
-        words.add(word);
-        return true;
+        if(find(word)){
+            words.add(word);
+            return true;
+        }
+        return false;
     }
     public boolean find(String target){
         for (String word : words){
