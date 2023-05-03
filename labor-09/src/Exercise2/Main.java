@@ -20,6 +20,8 @@ public class Main {
         scanner.close();
 
 
+
+
         DictionaryService services = new DictionaryService(DictionaryType.ARRAY_LIST);
         System.out.println("Unknown words from a file: ");
         System.out.println( services.findWordsFile( "text_to_find.txt"));

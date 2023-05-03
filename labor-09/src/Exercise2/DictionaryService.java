@@ -22,8 +22,6 @@ public class DictionaryService {
         try (Scanner scanner = new Scanner(new File(filename))) {
             while (scanner.hasNext()) {
                 String word = scanner.next();
-                word = word.toLowerCase();
-                word = word.replaceAll("[\\p{Punct}]", "");
                 if (!(dictionary.find(word)) && !(temp.contains(word))) {
                     temp.add(word);
                 }
