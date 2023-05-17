@@ -16,13 +16,13 @@ public class Training {
         this.endDate = endDate;
         this.pricePerStudent = pricePerStudent;
     }
-    public Student findStudentbyID(String ID){
+    /*public Student findStudentbyID(String ID){
         for (int i=0;i<enrolledStudents.size();i++){
 
         }
 
 
-    }
+    }*/
 
     public Course getCourse() {
         return course;

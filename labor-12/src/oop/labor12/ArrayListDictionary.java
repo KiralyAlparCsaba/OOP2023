@@ -1,6 +1,4 @@
-package Exercise2;
-
-import Exercise2.IDictionary;
+package oop.labor12;
 
 import java.io.File;
 import java.io.FileNotFoundException;
